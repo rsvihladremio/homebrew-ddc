@@ -11,7 +11,7 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-class  DDC < Formula
+class  Ddc < Formula
 
   desc "Collects logs, configuration and diagnostics from Kubernetes and On-Prem deployments of Dremio"
   homepage "https://github.com/rsvihladremio/dremio-diagnostic-collector"
