@@ -15,12 +15,12 @@ class  Ddc < Formula
 
   desc "Collects logs, configuration and diagnostics from Kubernetes and On-Prem deployments of Dremio"
   homepage "https://github.com/rsvihladremio/dremio-diagnostic-collector"
-  url "https://github.com/rsvihladremio/dremio-diagnostic-collector/archive/v0.1.1.tar.gz"
-  sha256 "9fd552f4670bd6a87f5320c10cb4612f1e0e9f1e398c06a3f564851fe9d8a497"
+  url "https://github.com/rsvihladremio/dremio-diagnostic-collector/archive/v0.1.2.tar.gz"
+  sha256 "ebebc5e862e88e0e491cc83d3799c29cdb3bbac5f226b084daa060d59dcda8ff"
   license "Apache-2.0"
   depends_on "go@1.18"
   def install
-    system "go build -ldflags '-X github.com/rsvihladremio/dremio-diagnostic-collector/cmd.GitSha=8dc9b85 -X github.com/rsvihladremio/dremio-diagnostic-collector/cmd.Version=v0.1.1' -o ./bin/ddc"
+    system "go build -ldflags '-X github.com/rsvihladremio/dremio-diagnostic-collector/cmd.GitSha=e74c7b9 -X github.com/rsvihladremio/dremio-diagnostic-collector/cmd.Version=v0.1.2' -o ./bin/ddc"
     bin.install "./bin/ddc" => "ddc"
   end
   test do
